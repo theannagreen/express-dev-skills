@@ -6,5 +6,10 @@ var expressCtrl = require('../controlers/express');
 
 router.get('/', expressCtrl.index);
 
+// GET /express/:id 
+router.get('/:id', expressCtrl.show);
+
+
+
 module.exports = router;
 
