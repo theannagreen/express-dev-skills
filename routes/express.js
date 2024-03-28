@@ -1,10 +1,10 @@
 var express = require('express');
 var router = express.Router();
+// require the controller that exports express CRUD functions 
+var expressCtrl = require('../controlers/express');
+// all actual paths start with "/express"
 
-// GET users//
-router.get('/users', function(req, res, next) {
-  res.send('respond with a resource');
-});
+router.get('/', expressCtrl.index);
 
 module.exports = router;
 
