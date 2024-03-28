@@ -5,7 +5,8 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var expressRouter = require('./routes/express');
+var todosRouter = require('./routes/todos');
+
 
 var app = express();
 
@@ -23,7 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //within the route modules are combined to the "starts with" paths
 
 app.use('/', indexRouter);
-app.use('/express', expressRouter);
+app.use('/todos', todosRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
