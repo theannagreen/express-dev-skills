@@ -8,7 +8,7 @@ module.exports = {
     sendUpdateSkillForm
 };
 
-const skills = require("../models/skills");
+const skills = require("../models/skill");
 
 function index(req, res, next) {
     const getAllSkills = skills.getAllSkills();
