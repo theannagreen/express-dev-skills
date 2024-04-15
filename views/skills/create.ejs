@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    </html><%- include('../../views/partials/header'); %>
+</head>
+<body>
+    <form action="../skills/" method="POST">
+        <div>
+            <label for="skill">Skill</label>
+        <input
+        id="skill"
+        name="skill"
+        type="text"
+        required
+        />
+        </div>
+        <div>
+            <label for="yearsOfExpereince">Years of Experience</label>
+            <input 
+            id="yearsOfExpereince"
+            name="yearsOfExpereince"
+            type="number"
+            required
+            />
+        </div>
+        <div>
+            <button type="submit">Add Skill</button>
+        </div>
+    </form>
+</body>
